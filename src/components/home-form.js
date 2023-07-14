@@ -130,9 +130,9 @@ const HomeForm = ({ onUploadBegin, onUploadEvent }) => {
   // };
 
   return (
-    <div className={"app-card"}>
+    <div className={"app-card" } >
       <form onSubmit={_onSubmit}>
-        <div className={"app-card-header"}>
+        <div className={"app-card-header "}>
           <div className={"app-card-header-inner"}>
             {form.files.length ? (
               <div className={"app-files-selected"}>
@@ -174,7 +174,7 @@ const HomeForm = ({ onUploadBegin, onUploadEvent }) => {
                       <i className={"icon-picture-streamline"} />
                     </span>
                     <span className={"app-upload-description"}>
-                      Drag and drop your files here.
+                      🔗 Click here to select file!
                     </span>
                   </span>
                 )}
@@ -238,6 +238,7 @@ const HomeForm = ({ onUploadBegin, onUploadEvent }) => {
                 Send
               </button>
             </div>
+            
           </div>
         </div>
       </form>

@@ -1,14 +1,39 @@
+import share from "./imgs/share.png"
 import React from "react";
 
 const Header = () => {
   return (
-    <div className={"app-header"}>
+    <div className="app-header flex justify-center pt-10 ">
       <div className={"app-site-info"}>
-        <h1>
-          <i className={"icon-paper-plane"} /> SHARE
-        </h1>
-        <div className={"site-title"}>Share Your Files.</div>
-        <div className={"site-slogan"}>Secure. Safe. Free.</div>
+        <div>
+          <h1 className="md:text-5xl text-3xl mt-10 md:mt-0 flex justify-center ">
+            <div className="mt-2 mr-2">
+              <img src={share} alt="" />
+            </div>
+            {/* <i className="icon-paper-plane mr-2" /> */}
+            ShareBuddy
+          </h1>
+        </div>
+
+        <div className="site-slogan flex justify-center text-sm">
+          ShareBuddy is in beta stage now!
+        </div>
+        {/* <div className="site-slogan flex justify-center text-sm">
+          Login & Signup Coming Soon!
+        </div> */}
+        <div className="site-slogan flex justify-center text-sm">
+          Email Sharing Coming Soon!
+        </div>
+        <div className="site-slogan flex justify-center text-sm">
+          Multi File Sharing Coming Soon!
+        </div>
+
+        <div className="site-title text-3xl">
+          Share Your Files With ShareBuddy.
+        </div>
+        {/* <div className={"site-slogan flex justify-center"}>
+          Secure. Safe. Free.
+        </div> */}
       </div>
     </div>
   );

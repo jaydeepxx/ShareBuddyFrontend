@@ -89,16 +89,11 @@ class Home extends Component {
     render() {
 
         return (
-
-            <div className={'app-container'}>
-                <Header/>
-                <div className={'app-content'}>
-
-                    {this._renderComponent()}
-
-                </div>
-            </div>
-        )
+          <div className="app-container flex flex-col justify-center place-content-center">
+            <Header />
+            <div className="app-content flex justify-center">{this._renderComponent()}</div>
+          </div>
+        );
     }
 }
 

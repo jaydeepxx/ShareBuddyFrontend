@@ -67,13 +67,16 @@ const View = ({ history, match }) => {
   const totalSize = betterNumber(post.size);
 
   return (
-    <div className="app-page-download">
-      <div className="app-top-header">
-        <h1 onClick={() => history.push("/")}>
-          <i className="icon-paper-plane" /> SHARE
+    <div className="app-page-download pt-10 flex flex-col">
+      <div className="app-top-header pt-10 pb-3 md:text-5xl text-2xl mt-10 md:mt-0 flex justify-center">
+        <h1
+          className="md:text-5xl text-3xl mt-0 md:mt-0 flex justify-center "
+          onClick={() => history.push("/")}
+        >
+          <i className="icon-paper-plane mr-2" /> ShareBuddy
         </h1>
       </div>
-      <div className="app-card app-card-download">
+      <div className="app-card app-card-download justify-center">
         <div className="app-card-content">
           <div className="app-card-content-inner">
             <div className="app-download-icon">
